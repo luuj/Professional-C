@@ -1,0 +1,19 @@
+test_zombie,2; Walks back and forth until he runs into a zombie
+je,12 ; Randomly chooses to kill them or run away
+test_zombie,1
+je,16
+test_passable
+je,10
+rotate,0
+rotate,0
+goto,1
+forward
+goto,1
+test_random
+je,7
+ranged_attack
+goto,1
+test_random
+je,7
+attack
+goto,1

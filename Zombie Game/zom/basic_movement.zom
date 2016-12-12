@@ -1,0 +1,10 @@
+test_wall ; Comment here!!
+je,9 ; Comments
+forward
+test_human,1
+je,7
+goto,1
+attack
+goto,1
+rotate,0
+goto,1

@@ -1,0 +1,28 @@
+test_wall ; Walks in a circle until it sees a human. If one space away, attack 
+je,19 ; If two spaces away, tries to run away to the nearest wall
+forward
+test_human,1
+je,27
+test_human,2
+je,21
+forward
+test_human,1
+je,27
+test_human,2
+je,21
+forward
+test_human,1
+je,27
+test_human,2
+je,21
+forward
+rotate,0
+goto,1
+rotate,1
+rotate,1
+forward
+test_wall
+jne,17
+goto,1
+attack
+goto,1
